@@ -1,163 +1,661 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baking Webinar Landing Page</title>
-  <style>
-   body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #ffffff;
-    color: #000000;
-}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baking Webinar Landing Page</title>
 
-/* Main Header Section */
-header {
-    padding: 60px 20px;
-    text-align: center;
-    background: #ffffff; /* White background */
-}
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 
-h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-    color: red;            /* Red heading */
-    background: #ffffff;   /* White background for heading area */
-    display: inline-block; /* Helps the background apply neatly */
-    padding: 10px 20px;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #000000;
+        }
 
-h2 {
-    font-size: 26px;
-    margin-top: 0;
-    color: #000000;
-}
+        /* Main Header Section */
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background: #ffffff;
+        }
 
-/* Call To Action Button */
-.cta-btn {
-    background: red;        /* Bold red button */
-    color: white;
-    padding: 15px 28px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 18px;
-    display: inline-block;
-    margin-top: 20px;
-    font-weight: 700;       /* Make it bold */
-}
+        h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            color: red;
+            background: #ffffff;
+            display: inline-block;
+            padding: 10px 20px;
+        }
 
-/* Content Sections */
-section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
-}
+        h2 {
+            font-size: 26px;
+            margin-top: 0;
+            color: #000000;
+        }
 
-.learn-list li {
-    margin-bottom: 10px;
-}
+        /* Call To Action Button */
+        .cta-btn {
+            background: red;
+            color: white;
+            padding: 15px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: 700;
+        }
 
-/* Testimonials */
-.testimonial {
-    background: #000000;  /* Black box */
-    color: #ffffff;       /* White text */
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 15px;
-}
+        /* Content Sections */
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        
+        /* Fix for list items in a section */
+        section li {
+            list-style: disc; /* Ensure bullet points are visible */
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    background: #ffffff;  /* White background */
-    font-size: 14px;
-    color: #000000;
-}
+        .learn-list li {
+            margin-bottom: 10px;
+        }
 
-  </style>
+        /* Testimonials */
+        .testimonial {
+            background: #000000;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* ⚠️ NEW FORM STYLING FOR CLEAN LOOK ⚠️ */
+        #signup {
+            text-align: center;
+            background: #f4f4f4; /* Light background for the form area */
+            border-top: 3px solid red;
+        }
+        
+        .mc-field-group {
+            max-width: 400px; /* Constrain the form width */
+            margin: 15px auto;
+            text-align: left;
+        }
+
+        .mc-field-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #000000;
+        }
+
+        .mc-field-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensures padding doesn't widen the input */
+        }
+        
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #333; /* Dark background */
+            font-size: 14px;
+            color: #ffffff;
+        }
+        footer a {
+            color: #ff9900; /* Orange/Gold link color for contrast */
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <h1>The PROBaker Secret Alternative Cake Recipe — Free Live Webinar</h1>
-  <h2> Cut your Cake production cost by at least 50%</h2></h2>
-  <a class="cta-btn" href="#signup">Reserve My Free Seat</a>
+    <h1>The PROBaker Secret Alternative Cake Recipe — Free Live Webinar</h1>
+    <h2> Cut your Cake production cost by at least 50%</h2>
+    <a class="cta-btn" href="#signup">Reserve My Free Seat</a>
 </header>
+
 <div style="position: relative; width: 100%; height: 0; padding-top: 102.5751%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAG4zjLKeA4/7cbUgxsLRO9I6ChK-ksE0g/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+        src="https://www.canva.com/design/DAG4zjLKeA4/7cbUgxsLRO9I6ChK-ksE0g/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+    </iframe>
 </div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAG4zjLKeA4&#x2F;7cbUgxsLRO9I6ChK-ksE0g&#x2F;view?utm_content=DAG4zjLKeA4&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Copy of Untitled</a> by yvettinni
+<p style="text-align:center;"><a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAG4zjLKeA4&#x2F;7cbUgxsLRO9I6ChK-ksE0g&#x2F;view?utm_content=DAG4zjLKeA4&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Copy of Untitled</a> by yvettinni</p>
+
 <section>
-  <h2>Who Is This Webinar For?</h2>
-  <li>Bakers and cake business owners who want to cut production costs.</li>
-      <li>Home bakers looking for budget-friendly recipe alternatives.</li>
-      <li>Anyone who wants to protect profits despite rising ingredient prices.</li>
-      <li>People who want to maintain cake quality while spending far less.</li>
+    <h2>Who Is This Webinar For?</h2>
+    <ul>
+        <li>Bakers and cake business owners who want to cut production costs.</li>
+        <li>Home bakers looking for budget-friendly recipe alternatives.</li>
+        <li>Anyone who wants to protect profits despite rising ingredient prices.</li>
+        <li>People who want to maintain cake quality while spending far less.</li>
+    </ul>
 </section>
 
 <section>
-  <h2>What You'll Learn</h2>
-  <ul class="learn-list">
-    <li>My exact formula for reducing your baking cost by over 50% without changing the taste, texture, or quality of your cakes.</li>
-    <li>Butter, milk, and sugar alternatives that still give you premium results.</li>
-    <li>Techniques that help you increase production without increasing your expenses.</li>
-  
-  </ul>
+    <h2>What You'll Learn</h2>
+    <ul class="learn-list">
+        <li>My exact formula for reducing your baking cost by over **50%** without changing the taste, texture, or quality of your cakes.</li>
+        <li>**Butter, milk, and sugar alternatives** that still give you premium results.</li>
+        <li>Techniques that help you increase production without increasing your expenses.</li>
+    </ul>
 </section>
 
 <section>
-  <h2>Meet Your Host</h2>
-  <p><strong>[yvetteBAKER]</strong> — The PROBaker Academy's Lead Instructor/p>
-  <p>From Passionate Baker to Profitable Entrepreneur
-Like many bakers, I started with a passion. But I quickly learned that passion isn't enough.
-
-Facing rising ingredient costs and inconsistent profits, I knew something had to change. It's been over 3 decades of experimenting and I've created a unique cost-cutting system that helped me slash my own baking expenses by over 40%.
-
-Now, I have taught hundreds of bakers around Africa my step-by-step methods.</p>
+    <h2>Meet Your Host</h2>
+    <p><strong>[yvetteBAKER]</strong> — The PROBaker Academy's Lead Instructor</p>
+    <p>From Passionate Baker to Profitable Entrepreneur. Like many bakers, I started with a passion. But I quickly learned that passion isn't enough.</p>
+    <p>Facing rising ingredient costs and inconsistent profits, I knew something had to change. It's been over 3 decades of experimenting and I've created a unique cost-cutting system that helped me slash my own baking expenses by over **40%**.</p>
+    <p>Now, I have taught hundreds of bakers around Africa my step-by-step methods.</p>
 </section>
 
 <section>
-  <h2>Testimonials</h2>
-  <div class="testimonial">“When I first attended the free webinar, I was spending so much on my cost of baking. now instead of using over $200 to make a cake i now use about $50 to make the same cake and my customers love how fluffy and moist the cakes are.” — Nasra,Tanzania.</div>
-  <div class="testimonial">“I attended Coach Yvette's Chocolate cake class online and it changed my baking game. The recipe did not only make a ton of money from the recipe but it also gave me inight on what chocolate cake should actually taste like.” — Yvonne, Nigeria.</div>
+    <h2>Testimonials</h2>
+    <div class="testimonial">“When I first attended the free webinar, I was spending so much on my cost of baking. now instead of using over $200 to make a cake i now use about $50 to make the same cake and my customers love how fluffy and moist the cakes are.” — Nasra,Tanzania.</div>
+    <div class="testimonial">“I attended Coach Yvette's Chocolate cake class online and it changed my baking game. The recipe did not only make a ton of money from the recipe but it also gave me inight on what chocolate cake should actually taste like.” — Yvonne, Nigeria.</div>
 </section>
 
 <section id="signup">
-  <h2>Secure Your Spot Now</h2>
-  <p>Seats are limited. Don’t miss this free opportunity.</p>
+    <h2>Secure Your Free Seat Now</h2>
+    <p>Enter your details below to register instantly and receive the webinar link via email.</p>
+    
+    <div id="mc_embed_signup" style="width: 100%;">
+        <form action="https://gmail.us7.list-manage.com/subscribe/post?u=8493045b43791e88a4271f6f9&amp;id=2ccea58422&amp;f_id=0021afe4f0" 
+              method="post" id="mc-embedded-subscribe-form" 
+              name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                </div>
+                            
+                <div class="mc-field-group">
+                    <label for="mce-FNAME">Name</label>
+                    <input type="text" name="FNAME" class=" text" id="mce-FNAME" value="">
+                </div>
 
-  <form action="congratulations.html" method="POST">
-    
-    <div>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="user_name" required>
+                <div class="mc-field-group">
+                    <label for="mce-PHONE">Phone Number</label>
+                    <input type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE" value="">
+                </div>
+                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                    <input type="text" name="b_8493045b43791e88a4271f6f9_2ccea58422" tabindex="-1" value="">
+                </div>
+                            
+                <div class="clear foot">
+                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="cta-btn" value="REGISTER NOW">
+                </div>
+            </div>
+        </form>
     </div>
-    
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="user_email" required>
-    </div>
-    
-    <div>
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="user_phone" required>
-    </div>
-    
-    <button type="submit" class="cta-btn">REGISTER NOW</button>
-    
-  </form>
-  </section>
+</section>
   
 <footer>
-  <p>Support Email: <a href="mailto:theprobakeracademy@gmail.com">theprobakeracademy@gmail.com</a></p>
-  <p>Support Phone: <a href="tel:+2349026103333">+2349026103333 (WHATSAPP ONLY)</a></p>
+    <p>Support Email: <a href="mailto:theprobakeracademy@gmail.com">theprobakeracademy@gmail.com</a></p>
+    <p>Support Phone: <a href="tel:+2349026103333">+234 902 610 3333 (WHATSAPP ONLY)</a></p>
+    <p>&copy; 2025 The PROBaker Academy. All rights reserved.</p>
 </footer>
+
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script type="text/javascript">
+    (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);
+
+    // ALL THE LONG VALIDATION/COUNTRY CODE JAVASCRIPT GOES HERE
+    if(!window.MC) {
+        window.MC = {};
+    }
+    window.MC.smsPhoneData = {
+        defaultCountryCode: 'NG',
+        programs: [],
+        smsProgramDataCountryNames: []
+    };
+
+    function getCountryUnicodeFlag(countryCode) {
+        return countryCode.toUpperCase().replace(/./g, (char) => String.fromCodePoint(char.charCodeAt(0) + 127397))
+    };
+
+    // HTML sanitization function to prevent XSS
+    function sanitizeHtml(str) {
+        if (typeof str !== 'string') return '';
+        return str
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#x27;')
+            .replace(/\//g, '&#x2F;');
+    }
+
+    // URL sanitization function to prevent javascript: and data: URLs
+    function sanitizeUrl(url) {
+        if (typeof url !== 'string') return '';
+        const trimmedUrl = url.trim().toLowerCase();
+        if (trimmedUrl.startsWith('javascript:') || trimmedUrl.startsWith('data:') || trimmedUrl.startsWith('vbscript:')) {
+            return '#';
+        }
+        return url;
+    }
+
+    const getBrowserLanguage = () => {
+        if (!window?.navigator?.language?.split('-')[1]) {
+            return window?.navigator?.language?.toUpperCase();
+        }
+        return window?.navigator?.language?.split('-')[1];
+    };
+
+    function getDefaultCountryProgram(defaultCountryCode, smsProgramData) {
+        if (!smsProgramData || smsProgramData.length === 0) {
+            return null;
+        }
+
+        const browserLanguage = getBrowserLanguage();
+
+        if (browserLanguage) {
+            const foundProgram = smsProgramData.find(
+                (program) => program?.countryCode === browserLanguage,
+            );
+            if (foundProgram) {
+                return foundProgram;
+            }
+        }
+
+        if (defaultCountryCode) {
+            const foundProgram = smsProgramData.find(
+                (program) => program?.countryCode === defaultCountryCode,
+            );
+            if (foundProgram) {
+                return foundProgram;
+            }
+        }
+
+        return smsProgramData[0];
+    }
+
+    function updateSmsLegalText(countryCode, fieldName) {
+        if (!countryCode || !fieldName) {
+            return;
+        }
+        
+        const programs = window?.MC?.smsPhoneData?.programs;
+        if (!programs || !Array.isArray(programs)) {
+            return;
+        }
+        
+        const program = programs.find(program => program?.countryCode === countryCode);
+        if (!program || !program.requiredTemplate) {
+            return;
+        }
+        
+        const legalTextElement = document.querySelector('#legal-text-' + fieldName);
+        if (!legalTextElement) {
+            return;
+        }
+        
+        // Remove HTML tags and clean up the text
+        const divRegex = new RegExp('</?[div][^>]*>', 'gi');
+        const fullAnchorRegex = new RegExp('<a.*?</a>', 'g');
+        const anchorRegex = new RegExp('<a href="(.*?)" target="(.*?)">(.*?)</a>');
+        
+        const requiredLegalText = program.requiredTemplate
+            .replace(divRegex, '')
+            .replace(fullAnchorRegex, '')
+            .slice(0, -1);
+        
+        const anchorMatches = program.requiredTemplate.match(anchorRegex);
+        
+        if (anchorMatches && anchorMatches.length >= 4) {
+            // Create link element safely using DOM methods instead of innerHTML
+            const linkElement = document.createElement('a');
+            linkElement.href = sanitizeUrl(anchorMatches[1]);
+            linkElement.target = sanitizeHtml(anchorMatches[2]);
+            linkElement.textContent = sanitizeHtml(anchorMatches[3]);
+            
+            legalTextElement.textContent = requiredLegalText + ' ';
+            legalTextElement.appendChild(linkElement);
+            legalTextElement.appendChild(document.createTextNode('.'));
+        } else {
+            legalTextElement.textContent = requiredLegalText + '.';
+        }
+    }
+
+    function generateDropdownOptions(smsProgramData) {
+        if (!smsProgramData || smsProgramData.length === 0) {
+            return '';
+        }
+        
+        return smsProgramData.map(program => {
+            const flag = getCountryUnicodeFlag(program.countryCode);
+            const countryName = getCountryName(program.countryCode);
+            const callingCode = program.countryCallingCode || '';
+            // Sanitize all values to prevent XSS
+            const sanitizedCountryCode = sanitizeHtml(program.countryCode || '');
+            const sanitizedCountryName = sanitizeHtml(countryName || '');
+            const sanitizedCallingCode = sanitizeHtml(callingCode || '');
+            return '<option value="' + sanitizedCountryCode + '">' + sanitizedCountryName + ' ' + sanitizedCallingCode + '</option>';
+        }).join('');
+    }
+
+    function getCountryName(countryCode) {
+        if (window.MC?.smsPhoneData?.smsProgramDataCountryNames && Array.isArray(window.MC.smsPhoneData.smsProgramDataCountryNames)) {
+            for (let i = 0; i < window.MC.smsPhoneData.smsProgramDataCountryNames.length; i++) {
+                if (window.MC.smsPhoneData.smsProgramDataCountryNames[i].code === countryCode) {
+                    return window.MC.smsPhoneData.smsProgramDataCountryNames[i].name;
+                }
+            }
+        }
+        return countryCode;
+    }
+
+    function getDefaultPlaceholder(countryCode) {
+        if (!countryCode || typeof countryCode !== 'string') {
+            return '+1 000 000 0000'; // Default US placeholder
+        }
+        
+        const mockPlaceholders = [
+            {
+            countryCode: 'US',
+            placeholder: '+1 000 000 0000',
+            helpText: 'Include the US country code +1 before the phone number',
+        },
+        {
+            countryCode: 'GB',
+            placeholder: '+44 0000 000000',
+            helpText: 'Include the GB country code +44 before the phone number',
+        },
+        {
+            countryCode: 'CA',
+            placeholder: '+1 000 000 0000',
+            helpText: 'Include the CA country code +1 before the phone number',
+        },
+        {
+            countryCode: 'AU',
+            placeholder: '+61 000 000 000',
+            helpText: 'Include the AU country code +61 before the phone number',
+        },
+        {
+            countryCode: 'DE',
+            placeholder: '+49 000 0000000',
+            helpText: 'Fügen Sie vor der Telefonnummer die DE-Ländervorwahl +49 ein',
+        },
+        {
+            countryCode: 'FR',
+            placeholder: '+33 0 00 00 00 00',
+            helpText: 'Incluez le code pays FR +33 avant le numéro de téléphone',
+        },
+        {
+            countryCode: 'ES',
+            placeholder: '+34 000 000 000',
+            helpText: 'Incluya el código de país ES +34 antes del número de teléfono',
+        },
+        {
+            countryCode: 'NL',
+            placeholder: '+31 0 00000000',
+            helpText: 'Voeg de NL-landcode +31 toe vóór het telefoonnummer',
+        },
+        {
+            countryCode: 'BE',
+            placeholder: '+32 000 00 00 00',
+            helpText: 'Incluez le code pays BE +32 avant le numéro de téléphone',
+        },
+        {
+            countryCode: 'CH',
+            placeholder: '+41 00 000 00 00',
+            helpText: 'Fügen Sie vor der Telefonnummer die CH-Ländervorwahl +41 ein',
+        },
+        {
+            countryCode: 'AT',
+            placeholder: '+43 000 000 0000',
+            helpText: 'Fügen Sie vor der Telefonnummer die AT-Ländervorwahl +43 ein',
+        },
+        {
+            countryCode: 'IE',
+            placeholder: '+353 00 000 0000',
+            helpText: 'Include the IE country code +353 before the phone number',
+        },
+        {
+            countryCode: 'IT',
+            placeholder: '+39 000 000 0000',
+            helpText:
+                'Includere il prefisso internazionale IT +39 prima del numero di telefono',
+        },
+            ];
+
+        const selectedPlaceholder = mockPlaceholders.find(function(item) {
+            return item && item.countryCode === countryCode;
+        });
+        
+        return selectedPlaceholder ? selectedPlaceholder.placeholder : mockPlaceholders[0].placeholder;
+    }
+
+    function updatePlaceholder(countryCode, fieldName) {
+        if (!countryCode || !fieldName) {
+            return;
+        }
+        
+        const phoneInput = document.querySelector('#mce-' + fieldName);
+        if (!phoneInput) {
+            return;
+        }
+        
+        const placeholder = getDefaultPlaceholder(countryCode);
+        if (placeholder) {
+            phoneInput.placeholder = placeholder;
+        }
+    }
+
+    function updateCountryCodeInstruction(countryCode, fieldName) {
+        updatePlaceholder(countryCode, fieldName);
+        
+    }
+
+    function getDefaultHelpText(countryCode) {
+        const mockPlaceholders = [
+            {
+                countryCode: 'US',
+                placeholder: '+1 000 000 0000',
+                helpText: 'Include the US country code +1 before the phone number',
+            },
+            {
+                countryCode: 'GB',
+                placeholder: '+44 0000 000000',
+                helpText: 'Include the GB country code +44 before the phone number',
+            },
+            {
+                countryCode: 'CA',
+                placeholder: '+1 000 000 0000',
+                helpText: 'Include the CA country code +1 before the phone number',
+            },
+            {
+                countryCode: 'AU',
+                placeholder: '+61 000 000 000',
+                helpText: 'Include the AU country code +61 before the phone number',
+            },
+            {
+                countryCode: 'DE',
+                placeholder: '+49 000 0000000',
+                helpText: 'Fügen Sie vor der Telefonnummer die DE-Ländervorwahl +49 ein',
+            },
+            {
+                countryCode: 'FR',
+                placeholder: '+33 0 00 00 00 00',
+                helpText: 'Incluez le code pays FR +33 avant le numéro de téléphone',
+            },
+            {
+                countryCode: 'ES',
+                placeholder: '+34 000 000 000',
+                helpText: 'Incluya el código de país ES +34 antes del número de teléfono',
+            },
+            {
+                countryCode: 'NL',
+                placeholder: '+31 0 00000000',
+                helpText: 'Voeg de NL-landcode +31 toe vóór het telefoonnummer',
+            },
+            {
+                countryCode: 'BE',
+                placeholder: '+32 000 00 00 00',
+                helpText: 'Incluez le code pays BE +32 avant le numéro de téléphone',
+            },
+            {
+                countryCode: 'CH',
+                placeholder: '+41 00 000 00 00',
+                helpText: 'Fügen Sie vor der Telefonnummer die CH-Ländervorwahl +41 ein',
+            },
+            {
+                countryCode: 'AT',
+                placeholder: '+43 000 000 0000',
+                helpText: 'Fügen Sie vor der Telefonnummer die AT-Ländervorwahl +43 ein',
+            },
+            {
+                countryCode: 'IE',
+                placeholder: '+353 00 000 0000',
+                helpText: 'Include the IE country code +353 before the phone number',
+            },
+            {
+                countryCode: 'IT',
+                placeholder: '+39 000 000 0000',
+                helpText: 'Includere il prefisso internazionale IT +39 prima del numero di telefono',
+            },
+        ];
+        
+        if (!countryCode || typeof countryCode !== 'string') {
+            return mockPlaceholders[0].helpText;
+        }
+        
+        const selectedHelpText = mockPlaceholders.find(function(item) {
+            return item && item.countryCode === countryCode;
+            });
+            
+        return selectedHelpText ? selectedHelpText.helpText : mockPlaceholders[0].helpText;
+    }
+
+    function setDefaultHelpText(countryCode) {
+        const helpTextSpan = document.querySelector('#help-text');
+        if (!helpTextSpan) {
+            return;
+        }
+
+        
+    }
+
+    function updateHelpTextCountryCode(countryCode, fieldName) {
+        if (!countryCode || !fieldName) {
+            return;
+        }
+        
+        setDefaultHelpText(countryCode);
+    }
+
+    function initializeSmsPhoneDropdown(fieldName) {
+        if (!fieldName || typeof fieldName !== 'string') {
+            return;
+        }
+        
+        const dropdown = document.querySelector('#country-select-' + fieldName);
+        const displayFlag = document.querySelector('#flag-display-' + fieldName);
+        
+        if (!dropdown || !displayFlag) {
+            return;
+        }
+
+        const smsPhoneData = window.MC?.smsPhoneData;
+        if (smsPhoneData && smsPhoneData.programs && Array.isArray(smsPhoneData.programs)) {
+            dropdown.innerHTML = generateDropdownOptions(smsPhoneData.programs);
+        }
+
+        const defaultProgram = getDefaultCountryProgram(smsPhoneData?.defaultCountryCode, smsPhoneData?.programs);
+        if (defaultProgram && defaultProgram.countryCode) {
+            dropdown.value = defaultProgram.countryCode;
+            
+            const flagSpan = displayFlag?.querySelector('#flag-emoji-' + fieldName);
+            if (flagSpan) {
+                flagSpan.textContent = getCountryUnicodeFlag(defaultProgram.countryCode);
+                flagSpan.setAttribute('aria-label', sanitizeHtml(defaultProgram.countryCode) + ' flag');
+            }
+            
+            updateSmsLegalText(defaultProgram.countryCode, fieldName);
+            updatePlaceholder(defaultProgram.countryCode, fieldName);
+            updateCountryCodeInstruction(defaultProgram.countryCode, fieldName);
+        }
+
+        
+        var smsNotRequiredRemoveCountryCodeEnabled = true;
+        var smsField = Object.values({"EMAIL":{"name":"EMAIL","label":"Email Address","helper_text":"","merge_id":0,"type":"email","required":true,"audience_field_name":"Email Address","field_type":"merge","enabled":true,"order":0},"FNAME":{"name":"FNAME","label":"First Name","helper_text":"","type":"text","required":false,"audience_field_name":"First Name","enabled":true,"order":1,"field_type":"merge","merge_id":1},"LNAME":{"name":"LNAME","label":"Last Name","helper_text":"","type":"text","required":false,"audience_field_name":"Last Name","enabled":true,"order":2,"field_type":"merge","merge_id":2},"PHONE":{"name":"PHONE","label":"Phone Number","helper_text":"","type":"phone","required":false,"audience_field_name":"Phone Number","phoneformat":"","enabled":true,"order":3,"field_type":"merge","merge_id":4}}).find(function(f) { return f.name === fieldName && f.type === 'smsphone'; });
+        var isRequired = smsField ? smsField.required : false;
+        var shouldAppendCountryCode = smsNotRequiredRemoveCountryCodeEnabled ? isRequired : true;
+        
+        var phoneInput = document.querySelector('#mce-' + fieldName);
+        if (phoneInput && defaultProgram.countryCallingCode && shouldAppendCountryCode) {
+            phoneInput.value = defaultProgram.countryCallingCode;
+        }
+        
+
+
+        displayFlag?.addEventListener('click', function(e) {
+            dropdown.focus();
+        });
+
+
+        dropdown?.addEventListener('change', function() {
+            const selectedCountry = this.value;
+            
+            if (!selectedCountry || typeof selectedCountry !== 'string') {
+                return;
+            }
+            
+            const flagSpan = displayFlag?.querySelector('#flag-emoji-' + fieldName);
+            if (flagSpan) {
+                flagSpan.textContent = getCountryUnicodeFlag(selectedCountry);
+                flagSpan.setAttribute('aria-label', sanitizeHtml(selectedCountry) + ' flag');
+            }
+
+            
+            const selectedProgram = window.MC?.smsPhoneData?.programs.find(function(program) {
+                return program && program.countryCode === selectedCountry;
+            });
+
+            var smsNotRequiredRemoveCountryCodeEnabled = true;
+            var smsField = Object.values({"EMAIL":{"name":"EMAIL","label":"Email Address","helper_text":"","merge_id":0,"type":"email","required":true,"audience_field_name":"Email Address","field_type":"merge","enabled":true,"order":0},"FNAME":{"name":"FNAME","label":"First Name","helper_text":"","type":"text","required":false,"audience_field_name":"First Name","enabled":true,"order":1,"field_type":"merge","merge_id":1},"LNAME":{"name":"LNAME","label":"Last Name","helper_text":"","type":"text","required":false,"audience_field_name":"Last Name","enabled":true,"order":2,"field_type":"merge","merge_id":2},"PHONE":{"name":"PHONE","label":"Phone Number","helper_text":"","type":"phone","required":false,"audience_field_name":"Phone Number","phoneformat":"","enabled":true,"order":3,"field_type":"merge","merge_id":4}}).find(function(f) { return f.name === fieldName && f.type === 'smsphone'; });
+            var isRequired = smsField ? smsField.required : false;
+            var shouldAppendCountryCode = smsNotRequiredRemoveCountryCodeEnabled ? isRequired : true;
+            
+            var phoneInput = document.querySelector('#mce-' + fieldName);
+            if (phoneInput && selectedProgram.countryCallingCode && shouldAppendCountryCode) {
+                phoneInput.value = selectedProgram.countryCallingCode;
+            }
+            
+            
+            updateSmsLegalText(selectedCountry, fieldName);
+            updatePlaceholder(selectedCountry, fieldName);
+            updateCountryCodeInstruction(selectedCountry, fieldName);
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const smsPhoneFields = document.querySelectorAll('[id^="country-select-"]');
+        
+        smsPhoneFields.forEach(function(dropdown) {
+            const fieldName = dropdown?.id.replace('country-select-', '');
+            initializeSmsPhoneDropdown(fieldName);
+        });
+    });
+</script>
 
 </body>
 </html>
